@@ -1,0 +1,136 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'main'
+  'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header{
+  grid-area: header;
+  background-color: blue;
+}
+
+main{
+grid-area: main;
+padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: crimson;
+  color: cyan;
+}
+
+h1{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h1{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  color:cadetblue;
+}
+
+header a {
+  color: white;
+  padding: 1rem;
+}
+
+a.brand{
+  color: wheat;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+justify-content: center;
+}
+
+.row.top {
+ align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 20rem;
+}
+.col-2 {
+  flex: 1 1 30rem;
+}
+img {
+  border-radius: 0.5rem;
+}
+
+img.medium{
+  max-width: 26rem;
+  width:100%;
+}
+
+img.large {
+  width: 100%;
+}
+.card{
+  border: 0.1rem rgb(0, 95, 173) solid;
+  background-color: rgb(240, 238, 238);
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.rating span {
+  color :gold;
+  margin :0.5rem;
+}
+.rating span:last-child{
+ color: rgb(7, 7, 7);
+}
+
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
